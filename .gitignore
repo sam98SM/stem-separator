@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# Editors / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# User audio / generated exports
+*.mp3
+*.m4a
+*.aac
+*.flac
+*.wav
+*.aiff
+*.aif
+*.ogg
+outputs/
+output/
+exports/
+export/
+temp/
+tmp/
+
+# Downloaded AI model weights
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.bin
+models/**/*.pth
+models/**/*.pt
+models/**/*.ckpt
+models/**/*.onnx
+
+# Runtime / secrets
+*.log
+errorlog.txt
+.env
+.env.*
+!.env.example
