@@ -1,0 +1,35 @@
+{
+  "mode": "maximum_stems",
+  "version": 1,
+  "description": "Target stem tree for personal maximum-stem extraction. Stems marked specialist_optional require a dedicated model and fall back to a residual stem when unavailable.",
+  "stems": {
+    "vocals": {
+      "children": ["lead_vocal", "backing_vocals", "vocal_residual"]
+    },
+    "drums": {
+      "children": ["kick", "snare", "toms", "hihat", "ride", "crash", "drum_residual"]
+    },
+    "percussion": {
+      "children": ["percussion", "shaker", "tambourine", "claps", "percussion_residual"]
+    },
+    "bass": {},
+    "guitars": {
+      "children": ["lead_guitar", "rhythm_guitar", "acoustic_guitar", "electric_guitar", "guitar_residual"],
+      "specialist_optional": ["lead_guitar", "rhythm_guitar", "acoustic_guitar", "electric_guitar"]
+    },
+    "keys": {
+      "children": ["piano", "organ", "synth", "keys_residual"]
+    },
+    "orchestral": {
+      "children": ["strings", "brass", "woodwinds", "orchestral_residual"]
+    },
+    "sequences": {
+      "children": ["pads", "electronic_loops", "fx", "sequence_residual"]
+    },
+    "other": {},
+    "generated": {
+      "children": ["click_track", "tempo_map"]
+    }
+  },
+  "fallback_policy": "Never fabricate a specialist stem. Preserve ambiguous audio in the matching residual stem."
+}
